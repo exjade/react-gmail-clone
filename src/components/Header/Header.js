@@ -4,6 +4,10 @@ import { IconButton } from '@material-ui/core';
 import Menu from '@material-ui/icons/Menu';
 import Search from '@material-ui/icons/Search';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
+import HelpOutline from '@material-ui/icons/HelpOutline';
+import Settings from '@material-ui/icons/Settings';
+import Apps from '@material-ui/icons/Apps';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 
 const Header = () => {
     return (
@@ -17,10 +21,21 @@ const Header = () => {
             <div className="header__middle">
                 <Search />
                 <input type="text" placeholder="Search mail" />
-                <ArrowDropDown className="header_inputCaret"/>
+                <ArrowDropDown className="header_input" />
             </div>
             <div className="header__right">
-
+                <IconButton>
+                    <HelpOutline />
+                </IconButton>
+                <IconButton>
+                    <Settings />
+                </IconButton>
+                <IconButton>
+                    <Apps />
+                </IconButton>
+                <IconButton>
+                    <AccountCircle />
+                </IconButton>
             </div>
         </div>
     )
