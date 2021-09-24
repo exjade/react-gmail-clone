@@ -7,7 +7,7 @@ import './Sidebar.css'
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <Button startIcon={<AddIcon fontSize="large" className="sidebar__compose"/>}>Compose</Button>
+            <Button startIcon={<AddIcon fontSize="large" /> } className="sidebar__compose"> Compose</Button>
         </div>
     )
 }
