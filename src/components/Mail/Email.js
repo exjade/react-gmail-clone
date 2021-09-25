@@ -67,13 +67,13 @@ const Email = () => {
             <div className="mail__body">
                 
                 <div className="mail__bodyHeader">
-                    <h2>Subject</h2>
+                    <h2>Henry Pentagono</h2>
                     <LabelImportantIcon className="mail__important"/>
-                    <p className="title">title</p>
+                    <p className="title">Ausente</p>
                     <p className="mail__time">06:00 a.m</p>
                 </div>
                 <div className="mail__message">
-                    <p>This is a message</p>
+                    <p>Nos estamos quedando sin compañeros!</p>
                 </div>
             </div>
         </div>
