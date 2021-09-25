@@ -3,8 +3,8 @@ import './EmailList.css'
 
 const EmailList = () => {
     return (
-        <div>
-            
+         <div className="emailList">
+             
         </div>
     )
 }
