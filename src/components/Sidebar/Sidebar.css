@@ -21,4 +21,5 @@
 .sidebar__footer {
     display:flex;
     justify-content: center;
+    margin-top: 26em; 
 }
