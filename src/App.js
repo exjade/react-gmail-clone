@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 import EmailList from './components/EmailList/EmailList'
+import Email from './components/Mail/Email'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Sidebar />
           <Switch>
             <Route path="/mail">
-
+              <Email />
             </Route>
             <Route path="/">
               <EmailList />
