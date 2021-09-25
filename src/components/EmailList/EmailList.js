@@ -11,6 +11,7 @@ import InboxIcon from '@material-ui/icons/Inbox'
 import PeopleIcon from '@material-ui/icons/People'
 import LocalOfferIcon from '@material-ui/icons/LocalOffer'
 import Section from './Section/Section'
+import EmailRow from './EmailRow/EmailRow'
 import './EmailList.css'
 
 
@@ -63,9 +64,194 @@ const EmailList = () => {
                     color="green"
                 />
             </div>
-                <div className="emailList__list">
-
-                </div>
+            <div className="emailList__list">
+                <EmailRow
+                    title="Google"
+                    subject="This website looks amazing!"
+                    description="voluptate deserunt."
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="This website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+                <EmailRow
+                    title="Google"
+                    subject="the website looks amazing!"
+                    description="testing"
+                    time="04:11 a.m."
+                />
+            </div>
         </div>
     )
 }
