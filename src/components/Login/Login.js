@@ -27,14 +27,10 @@ const Login = () => {
 
     return (
         <div className="login">
-<<<<<<< HEAD
-            
-=======
             <div className="login__container">
                 <img src="https://i.imgur.com/hNZvInF.jpeg" alt="loader" />
                 <Button onClick={signIn} variant="contained" color="primary">Login</Button>
             </div>
->>>>>>> login
         </div>
     )
 }
