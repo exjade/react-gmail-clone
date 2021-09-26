@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+<h1>Gemail App</h1>
+
+<img src="https://i.imgur.com/ZhPk5Ab.png" />
+<img src="https://i.imgur.com/5ml6nGp.png" />
+<img src="https://i.imgur.com/j2hmunn.png" />
+<img src="https://i.imgur.com/eK83ouU.png" />
+
+Made with ♥ by @Exjade
+
 ## Available Scripts
 
 In the project directory, you can run:
