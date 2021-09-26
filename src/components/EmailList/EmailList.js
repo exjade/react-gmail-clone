@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Checkbox, IconButton } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 import ReplayIcon from '@material-ui/icons/Replay'
@@ -13,9 +13,24 @@ import LocalOfferIcon from '@material-ui/icons/LocalOffer'
 import Section from './Section/Section'
 import EmailRow from './EmailRow/EmailRow'
 import './EmailList.css'
+import { db } from '../../firebase';
 
 
 const EmailList = () => {
+
+    const [emails, setEmails] = useState([]);
+
+    // Run this piece of code when the emaillist compnt running once
+    useEffect(() => {
+        db.collection('emails').orderBy('timestamp', 'desc').onSnapshot((snapshot) => setEmails(
+            snapshot.docs.map((doc) => ({
+                id: doc.id,
+                data: doc.data(),
+            }))
+        )
+        )
+    }, []);
+
     return (
         <div className="emailList">
             <div className="emailList__settings">
@@ -65,28 +80,21 @@ const EmailList = () => {
                 />
             </div>
             <div className="emailList__list">
+                {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
+                    <EmailRow
+                        id={id}
+                        key={id}
+                        title={to}
+                        subject={subject}
+                        description={message}
+                        time={new Date(timestamp?.seconds * 1000).toUTCString()}
+                    />
+                ))}
+
                 <EmailRow
-                    title="Google"
-                    subject="This website looks amazing!"
-                    description="voluptate deserunt."
-                    time="04:11 a.m."
-                />
-                <EmailRow
-                    title="Google"
-                    subject="This website looks amazing!"
-                    description="testing"
-                    time="04:11 a.m."
-                />
-                <EmailRow
-                    title="Google"
-                    subject="the website looks amazing!"
-                    description="testing"
-                    time="04:11 a.m."
-                />
-                <EmailRow
-                    title="Google"
-                    subject="the website looks amazing!"
-                    description="testing"
+                    title="Adrian Zamora"
+                    subject="Compose your message and enjoy"
+                    description="Hope you enjoy my demo"
                     time="04:11 a.m."
                 />
             </div>
