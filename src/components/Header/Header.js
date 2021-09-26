@@ -1,15 +1,17 @@
 import React from 'react';
 import './Header.css';
-import { IconButton } from '@material-ui/core';
+import { IconButton, Avatar } from '@material-ui/core';
 import Menu from '@material-ui/icons/Menu';
 import Search from '@material-ui/icons/Search';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import HelpOutline from '@material-ui/icons/HelpOutline';
 import Settings from '@material-ui/icons/Settings';
 import Apps from '@material-ui/icons/Apps';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import { useSelector } from 'react-redux';
+import { selectUser } from './../../features/userSlice';
 
 const Header = () => {
+    const user = useSelector(selectUser);
     return (
         <div className="header">
             <div className="header__left">
@@ -33,9 +35,8 @@ const Header = () => {
                 <IconButton>
                     <Apps />
                 </IconButton>
-                <IconButton>
-                    <AccountCircle />
-                </IconButton>
+                <Avatar src={user?.photoURL}/>
+              
             </div>
         </div>
     )
