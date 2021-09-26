@@ -8,10 +8,23 @@ import HelpOutline from '@material-ui/icons/HelpOutline';
 import Settings from '@material-ui/icons/Settings';
 import Apps from '@material-ui/icons/Apps';
 import { useSelector } from 'react-redux';
-import { selectUser } from './../../features/userSlice';
+import { selectUser, logout } from './../../features/userSlice';
+import { auth } from './../../firebase'
+import { useDispatch } from 'react-redux';
+
 
 const Header = () => {
     const user = useSelector(selectUser);
+    const dispatch = useDispatch();
+
+    const signOut = () => {
+        auth.signOut()
+        .then( () => {
+            dispatch(logout())
+        })
+        .catch(error => alert(error.message));
+    } ;
+
     return (
         <div className="header">
             <div className="header__left">
@@ -35,7 +48,7 @@ const Header = () => {
                 <IconButton>
                     <Apps />
                 </IconButton>
-                <Avatar src={user?.photoURL}/>
+                <Avatar className="header__avatar" onClick={signOut} src={user?.photoURL} />
               
             </div>
         </div>
